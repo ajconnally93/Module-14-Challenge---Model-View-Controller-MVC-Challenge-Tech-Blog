@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/ajconnally93/Module-14-Challenge---Model-View-Controller-MVC-Challenge-Tech-Blog#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
     "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "helpers": "^0.0.6",
     "mysql2": "^2.3.3",
