@@ -1,0 +1,27 @@
+{
+  "name": "module-14-challenge---model-view-controller-mvc-challenge-tech-blog",
+  "version": "1.0.0",
+  "description": "AS A developer who writes about tech\r I WANT a CMS-style blog site\r SO THAT I can publish articles, blog posts, and my thoughts and opinions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajconnally93/Module-14-Challenge---Model-View-Controller-MVC-Challenge-Tech-Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajconnally93/Module-14-Challenge---Model-View-Controller-MVC-Challenge-Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/ajconnally93/Module-14-Challenge---Model-View-Controller-MVC-Challenge-Tech-Blog#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "helpers": "^0.0.6",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0"
+  }
+}
