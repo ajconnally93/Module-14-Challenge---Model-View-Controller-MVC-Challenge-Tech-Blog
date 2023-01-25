@@ -20,6 +20,7 @@ router.post('/', async (req, res) => {
 
   catch (err) {
     res.status(400).json(err);
+    console.error(err);
   }
 });
 
@@ -41,6 +42,8 @@ router.post('/login', async (req, res) => {
     // validates if password is correct
     const correctPassword = await data.checkPassword(req.body.password);
 
+    console.log("TEST HELLO!");
+
     if (!correctPassword) {
       res
         .status(400)
@@ -56,7 +59,8 @@ router.post('/login', async (req, res) => {
     });
 
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
+    console.error(err);
   }
 });
 

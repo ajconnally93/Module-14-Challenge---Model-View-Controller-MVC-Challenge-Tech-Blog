@@ -4,15 +4,15 @@ const loginFormHandler = async (event) => {
     event.preventDefault();
 
     // need to match these ID's later in handlebars
-    const loginName = document.querySelector('#username-login');
-    const loginPassword = document.querySelector('#password-login');
+    const username = document.querySelector('#username-login').value.trim();
+    const password = document.querySelector('#password-login').value;
   
 
     // will redirect user to the dashboard handlebars page if login name and password is correct
-    if (loginName && loginPassword) {
+    if (username && password) {
       const response = await fetch('/api/users/login', {
         method: 'POST',
-        body: JSON.stringify({ loginName, loginPassword }),
+        body: JSON.stringify({ username, password }),
         headers: { 'Content-Type': 'application/json' },
       });
   

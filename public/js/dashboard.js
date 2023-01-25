@@ -48,4 +48,8 @@ newBlogForm.addEventListener('submit', newBlogHandler);
 
 
 const blogList = document.querySelector(".blog-list");
-blogList.addEventListener('click', deletionHandler);
+
+if (blogList) {
+	blogList.addEventListener('click', deletionHandler);
+}
+// blogList.addEventListener('click', deletionHandler);

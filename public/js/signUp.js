@@ -5,14 +5,14 @@ const signupHandler = async (event) => {
     // prevent event bubbling
     event.preventDefault();
   
-    const loginName = document.querySelector('#username-signup')
-    const loginPassword = document.querySelector('#password-signup')
+    const username = document.querySelector('#username-signup').value.trim()
+    const password = document.querySelector('#password-signup').value.trim()
   
-    if (loginName && loginPassword) {
+    if (username && password) {
 
       const response = await fetch('/api/users', {
         method: 'POST',
-        body: JSON.stringify({ loginName, loginPassword }),
+        body: JSON.stringify({ username, password }),
         headers: { 'Content-Type': 'application/json' },
       });
   
